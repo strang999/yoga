@@ -1,9 +1,1900 @@
-!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=1)}([function(t,e){var n;n=function(){return this}();try{n=n||new Function("return this")()}catch(t){"object"==typeof window&&(n=window)}t.exports=n},function(t,e,n){n(2),n(3),window.addEventListener("DOMContentLoaded",(function(){"use strict";var t=n(4),e=n(5),r=n(6),o=n(7),i=n(10),u=n(11);t(),e(),r(),o(),i(),u()}))},function(t,e){window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=function(t,e){e=e||window;for(var n=0;n<this.length;n++)t.call(e,this[n],n,this)})},function(t,e,n){(function(t){!function(){var e;function n(t){var e=0;return function(){return e<t.length?{done:!1,value:t[e++]}:{done:!0}}}var r="function"==typeof Object.defineProperties?Object.defineProperty:function(t,e,n){t!=Array.prototype&&t!=Object.prototype&&(t[e]=n.value)},o="undefined"!=typeof window&&window===this?this:void 0!==t&&null!=t?t:this;function i(){i=function(){},o.Symbol||(o.Symbol=c)}function u(t,e){this.s=t,r(this,"description",{configurable:!0,writable:!0,value:e})}u.prototype.toString=function(){return this.s};var a,s,c=(a=0,function t(e){if(this instanceof t)throw new TypeError("Symbol is not a constructor");return new u("jscomp_symbol_"+(e||"")+"_"+a++,e)});function l(){i();var t=o.Symbol.iterator;t||(t=o.Symbol.iterator=o.Symbol("Symbol.iterator")),"function"!=typeof Array.prototype[t]&&r(Array.prototype,t,{configurable:!0,writable:!0,value:function(){return function(t){return l(),(t={next:t})[o.Symbol.iterator]=function(){return this},t}(n(this))}}),l=function(){}}function f(t){var e="undefined"!=typeof Symbol&&Symbol.iterator&&t[Symbol.iterator];return e?e.call(t):{next:n(t)}}if("function"==typeof Object.setPrototypeOf)s=Object.setPrototypeOf;else{var h;t:{var d={};try{d.__proto__={v:!0},h=d.v;break t}catch(t){}h=!1}s=h?function(t,e){if(t.__proto__=e,t.__proto__!==e)throw new TypeError(t+" is not extensible");return t}:null}var p=s;function v(){this.h=!1,this.c=null,this.o=void 0,this.b=1,this.m=this.w=0,this.g=null}function y(t){if(t.h)throw new TypeError("Generator is already running");t.h=!0}function m(t,e,n){return t.b=n,{value:e}}function b(t){for(var e in this.C=t,this.l=[],t)this.l.push(e);this.l.reverse()}function g(t){this.a=new v,this.D=t}function w(t,e,n,r){try{var o=e.call(t.a.c,n);if(!(o instanceof Object))throw new TypeError("Iterator result "+o+" is not an object");if(!o.done)return t.a.h=!1,o;var i=o.value}catch(e){return t.a.c=null,t.a.j(e),_(t)}return t.a.c=null,r.call(t.a,i),_(t)}function _(t){for(;t.a.b;)try{var e=t.D(t.a);if(e)return t.a.h=!1,{value:e.value,done:!1}}catch(e){t.a.o=void 0,t.a.j(e)}if(t.a.h=!1,t.a.g){if(e=t.a.g,t.a.g=null,e.B)throw e.A;return{value:e.return,done:!0}}return{value:void 0,done:!0}}function S(t){this.next=function(e){return t.i(e)},this.throw=function(e){return t.j(e)},this.return=function(e){return function(t,e){y(t.a);var n=t.a.c;return n?w(t,"return"in n?n.return:function(t){return{value:t,done:!0}},e,t.a.return):(t.a.return(e),_(t))}(t,e)},l(),this[Symbol.iterator]=function(){return this}}function x(t,e){var n=new S(new g(e));return p&&p(n,t.prototype),n}if(v.prototype.i=function(t){this.o=t},v.prototype.j=function(t){this.g={A:t,B:!0},this.b=this.w||this.m},v.prototype.return=function(t){this.g={return:t},this.b=this.m},g.prototype.i=function(t){return y(this.a),this.a.c?w(this,this.a.c.next,t,this.a.i):(this.a.i(t),_(this))},g.prototype.j=function(t){return y(this.a),this.a.c?w(this,this.a.c.throw,t,this.a.i):(this.a.j(t),_(this))},"undefined"!=typeof Blob&&("undefined"==typeof FormData||!FormData.prototype.keys)){var L=function(t,e){for(var n=0;n<t.length;n++)e(t[n])},T=function(t,e,n){return e instanceof Blob?[String(t),e,void 0!==n?n+"":"string"==typeof e.name?e.name:"blob"]:[String(t),String(e)]},j=function(t,e){if(t.length<e)throw new TypeError(e+" argument required, but only "+t.length+" present.")},E=function(t){var e=f(t);return t=e.next().value,e=e.next().value,t instanceof Blob&&(t=new File([t],e,{type:t.type,lastModified:t.lastModified})),t},M="object"==typeof window?window:"object"==typeof self?self:this,A=M.FormData,q=M.XMLHttpRequest&&M.XMLHttpRequest.prototype.send,O=M.Request&&M.fetch,k=M.navigator&&M.navigator.sendBeacon;i();var C=M.Symbol&&Symbol.toStringTag;C&&(Blob.prototype[C]||(Blob.prototype[C]="Blob"),"File"in M&&!File.prototype[C]&&(File.prototype[C]="File"));try{new File([],"")}catch(t){M.File=function(t,e,n){return t=new Blob(t,n),n=n&&void 0!==n.lastModified?new Date(n.lastModified):new Date,Object.defineProperties(t,{name:{value:e},lastModifiedDate:{value:n},lastModified:{value:+n},toString:{value:function(){return"[object File]"}}}),C&&Object.defineProperty(t,C,{value:"File"}),t}}i(),l();var F=function(t){if(this.f=Object.create(null),!t)return this;var e=this;L(t.elements,(function(t){if(t.name&&!t.disabled&&"submit"!==t.type&&"button"!==t.type)if("file"===t.type){var n=t.files&&t.files.length?t.files:[new File([],"",{type:"application/octet-stream"})];L(n,(function(n){e.append(t.name,n)}))}else"select-multiple"===t.type||"select-one"===t.type?L(t.options,(function(n){!n.disabled&&n.selected&&e.append(t.name,n.value)})):"checkbox"===t.type||"radio"===t.type?t.checked&&e.append(t.name,t.value):(n="textarea"===t.type?t.value.replace(/\r\n/g,"\n").replace(/\n/g,"\r\n"):t.value,e.append(t.name,n))}))};if((e=F.prototype).append=function(t,e,n){j(arguments,2);var r=f(T.apply(null,arguments));t=r.next().value,e=r.next().value,n=r.next().value,(r=this.f)[t]||(r[t]=[]),r[t].push([e,n])},e.delete=function(t){j(arguments,1),delete this.f[String(t)]},e.entries=function t(){var e,n,r,o,i,u,a=this;return x(t,(function(t){switch(t.b){case 1:e=a.f,r=new b(e);case 2:var s;t:{for(s=r;0<s.l.length;){var c=s.l.pop();if(c in s.C){s=c;break t}}s=null}if(null==(n=s)){t.b=0;break}o=f(e[n]),i=o.next();case 5:if(i.done){t.b=2;break}return u=i.value,m(t,[n,E(u)],6);case 6:i=o.next(),t.b=5}}))},e.forEach=function(t,e){j(arguments,1);for(var n=f(this),r=n.next();!r.done;r=n.next()){var o=f(r.value);r=o.next().value,o=o.next().value,t.call(e,o,r,this)}},e.get=function(t){j(arguments,1);var e=this.f;return e[t=String(t)]?E(e[t][0]):null},e.getAll=function(t){return j(arguments,1),(this.f[String(t)]||[]).map(E)},e.has=function(t){return j(arguments,1),String(t)in this.f},e.keys=function t(){var e,n,r,o,i=this;return x(t,(function(t){if(1==t.b&&(e=f(i),n=e.next()),3!=t.b)return n.done?void(t.b=0):(r=n.value,o=f(r),m(t,o.next().value,3));n=e.next(),t.b=2}))},e.set=function(t,e,n){j(arguments,2);var r=T.apply(null,arguments);this.f[r[0]]=[[r[1],r[2]]]},e.values=function t(){var e,n,r,o,i=this;return x(t,(function(t){if(1==t.b&&(e=f(i),n=e.next()),3!=t.b)return n.done?void(t.b=0):(r=n.value,(o=f(r)).next(),m(t,o.next().value,3));n=e.next(),t.b=2}))},F.prototype._asNative=function(){for(var t=new A,e=f(this),n=e.next();!n.done;n=e.next()){var r=f(n.value);n=r.next().value,r=r.next().value,t.append(n,r)}return t},F.prototype._blob=function(){for(var t="----formdata-polyfill-"+Math.random(),e=[],n=f(this),r=n.next();!r.done;r=n.next()){var o=f(r.value);r=o.next().value,o=o.next().value,e.push("--"+t+"\r\n"),o instanceof Blob?e.push('Content-Disposition: form-data; name="'+r+'"; filename="'+o.name+'"\r\n',"Content-Type: "+(o.type||"application/octet-stream")+"\r\n\r\n",o,"\r\n"):e.push('Content-Disposition: form-data; name="'+r+'"\r\n\r\n'+o+"\r\n")}return e.push("--"+t+"--"),new Blob(e,{type:"multipart/form-data; boundary="+t})},F.prototype[Symbol.iterator]=function(){return this.entries()},F.prototype.toString=function(){return"[object FormData]"},C&&(F.prototype[C]="FormData"),q){var P=M.XMLHttpRequest.prototype.setRequestHeader;M.XMLHttpRequest.prototype.setRequestHeader=function(t,e){P.call(this,t,e),"content-type"===t.toLowerCase()&&(this.u=!0)},M.XMLHttpRequest.prototype.send=function(t){t instanceof F?(t=t._blob(),this.u||this.setRequestHeader("Content-Type",t.type),q.call(this,t)):q.call(this,t)}}if(O){var D=M.fetch;M.fetch=function(t,e){return e&&e.body&&e.body instanceof F&&(e.body=e.body._blob()),D.call(this,t,e)}}k&&(M.navigator.sendBeacon=function(t,e){return e instanceof F&&(e=e._asNative()),k.call(this,t,e)}),M.FormData=F}}()}).call(this,n(0))},function(t,e){t.exports=function(){var t=document.querySelectorAll(".info-header-tab"),e=document.querySelector(".info-header"),n=document.querySelectorAll(".info-tabcontent");function r(t){for(var e=t;e<n.length;e++)n[e].classList.remove("show"),n[e].classList.add("hide")}r(1),e.addEventListener("click",(function(e){var o,i=e.target;if(i&&i.classList.contains("info-header-tab"))for(var u=0;u<t.length;u++)if(i==t[u]){r(0),n[o=u].classList.contains("hide")&&(n[o].classList.remove("hide"),n[o].classList.add("show"));break}}))}},function(t,e){t.exports=function(){!function(t,e){var n=document.getElementById(t),r=n.querySelector(".hours"),o=n.querySelector(".minutes"),i=n.querySelector(".seconds"),u=setInterval((function(){var t=function(t){var e=Date.parse(t)-Date.parse(new Date),n=Math.floor(e/1e3%60),r=Math.floor(e/1e3/60%60),o=Math.floor(e/36e5);return{total:e,hours:o<10?"0"+o:o,minutes:r<10?"0"+r:r,seconds:n<10?"0"+n:n}}(e);r.textContent=t.hours,o.textContent=t.minutes,i.textContent=t.seconds,t.total<=0&&(clearInterval(u),r.textContent="00",o.textContent="00",i.textContent="00")}),1e3)}("timer","2020-02-01")}},function(t,e){t.exports=function(){var t=document.querySelector(".more"),e=document.querySelector(".overlay"),n=document.querySelector(".popup-close");t.addEventListener("click",(function(){e.style.display="block",this.classList.add("more-splash"),document.body.style.overflow="hidden"})),n.addEventListener("click",(function(){e.style.display="none",t.classList.remove("more-splash"),document.body.style.overflow="auto"}))}},function(t,e,n){var r="undefined"==typeof Promise?n(8).Promise:Promise;t.exports=function(){var t="Загрузка...",e="Спасибо! Скоро мы с Вами свяжемся!",n="Что-то пошло не так",o=document.querySelector(".main-form"),i=document.getElementsByTagName("input"),u=document.createElement("div"),a=document.querySelector("#form");function s(o){o.addEventListener("submit",(function(a){a.preventDefault(),o.appendChild(u);var s,c=new FormData(o);console.log(c),(s=c,new r((function(t,e){var n=new XMLHttpRequest;n.open("POST","server.php"),n.setRequestHeader("Content-type","application/json, charset=UTF-8"),n.onreadystatechange=function(){n.readyState<4?t():4===n.readyState&&200===n.status?t():e()},n.send(s)}))).then((function(){return u.innerHTML=t})).then((function(){return u.innerHTML=e})).catch((function(){return console.log("error")}),u.innerHTML=n).then((function(){for(var t=0;t<i.length;t++)i[t].value=""}))}))}u.classList.add("status"),s(o),s(a)}},function(t,e,n){(function(e,n){
-/*!
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/script.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./node_modules/es6-promise/dist/es6-promise.js":
+/*!******************************************************!*\
+  !*** ./node_modules/es6-promise/dist/es6-promise.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process, global) {/*!
  * @overview es6-promise - a tiny implementation of Promises/A+.
  * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
  * @license   Licensed under MIT license
  *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
  * @version   v4.2.8+1e68dce6
- */var r;r=function(){"use strict";function t(t){return"function"==typeof t}var r=Array.isArray?Array.isArray:function(t){return"[object Array]"===Object.prototype.toString.call(t)},o=0,i=void 0,u=void 0,a=function(t,e){p[o]=t,p[o+1]=e,2===(o+=2)&&(u?u(v):w())},s="undefined"!=typeof window?window:void 0,c=s||{},l=c.MutationObserver||c.WebKitMutationObserver,f="undefined"==typeof self&&void 0!==e&&"[object process]"==={}.toString.call(e),h="undefined"!=typeof Uint8ClampedArray&&"undefined"!=typeof importScripts&&"undefined"!=typeof MessageChannel;function d(){var t=setTimeout;return function(){return t(v,1)}}var p=new Array(1e3);function v(){for(var t=0;t<o;t+=2)(0,p[t])(p[t+1]),p[t]=void 0,p[t+1]=void 0;o=0}var y,m,b,g,w=void 0;function _(t,e){var n=this,r=new this.constructor(L);void 0===r[x]&&F(r);var o=n._state;if(o){var i=arguments[o-1];a((function(){return k(o,r,i,n._result)}))}else q(n,r,t,e);return r}function S(t){if(t&&"object"==typeof t&&t.constructor===this)return t;var e=new this(L);return j(e,t),e}f?w=function(){return e.nextTick(v)}:l?(m=0,b=new l(v),g=document.createTextNode(""),b.observe(g,{characterData:!0}),w=function(){g.data=m=++m%2}):h?((y=new MessageChannel).port1.onmessage=v,w=function(){return y.port2.postMessage(0)}):w=void 0===s?function(){try{var t=Function("return this")().require("vertx");return void 0!==(i=t.runOnLoop||t.runOnContext)?function(){i(v)}:d()}catch(t){return d()}}():d();var x=Math.random().toString(36).substring(2);function L(){}function T(e,n,r){n.constructor===e.constructor&&r===_&&n.constructor.resolve===S?function(t,e){1===e._state?M(t,e._result):2===e._state?A(t,e._result):q(e,void 0,(function(e){return j(t,e)}),(function(e){return A(t,e)}))}(e,n):void 0===r?M(e,n):t(r)?function(t,e,n){a((function(t){var r=!1,o=function(t,e,n,r){try{t.call(e,n,r)}catch(t){return t}}(n,e,(function(n){r||(r=!0,e!==n?j(t,n):M(t,n))}),(function(e){r||(r=!0,A(t,e))}),t._label);!r&&o&&(r=!0,A(t,o))}),t)}(e,n,r):M(e,n)}function j(t,e){if(t===e)A(t,new TypeError("You cannot resolve a promise with itself"));else if(o=typeof(r=e),null===r||"object"!==o&&"function"!==o)M(t,e);else{var n=void 0;try{n=e.then}catch(e){return void A(t,e)}T(t,e,n)}var r,o}function E(t){t._onerror&&t._onerror(t._result),O(t)}function M(t,e){void 0===t._state&&(t._result=e,t._state=1,0!==t._subscribers.length&&a(O,t))}function A(t,e){void 0===t._state&&(t._state=2,t._result=e,a(E,t))}function q(t,e,n,r){var o=t._subscribers,i=o.length;t._onerror=null,o[i]=e,o[i+1]=n,o[i+2]=r,0===i&&t._state&&a(O,t)}function O(t){var e=t._subscribers,n=t._state;if(0!==e.length){for(var r=void 0,o=void 0,i=t._result,u=0;u<e.length;u+=3)r=e[u],o=e[u+n],r?k(n,r,o,i):o(i);t._subscribers.length=0}}function k(e,n,r,o){var i=t(r),u=void 0,a=void 0,s=!0;if(i){try{u=r(o)}catch(t){s=!1,a=t}if(n===u)return void A(n,new TypeError("A promises callback cannot return that same promise."))}else u=o;void 0!==n._state||(i&&s?j(n,u):!1===s?A(n,a):1===e?M(n,u):2===e&&A(n,u))}var C=0;function F(t){t[x]=C++,t._state=void 0,t._result=void 0,t._subscribers=[]}var P=function(){function t(t,e){this._instanceConstructor=t,this.promise=new t(L),this.promise[x]||F(this.promise),r(e)?(this.length=e.length,this._remaining=e.length,this._result=new Array(this.length),0===this.length?M(this.promise,this._result):(this.length=this.length||0,this._enumerate(e),0===this._remaining&&M(this.promise,this._result))):A(this.promise,new Error("Array Methods must be provided an Array"))}return t.prototype._enumerate=function(t){for(var e=0;void 0===this._state&&e<t.length;e++)this._eachEntry(t[e],e)},t.prototype._eachEntry=function(t,e){var n=this._instanceConstructor,r=n.resolve;if(r===S){var o=void 0,i=void 0,u=!1;try{o=t.then}catch(t){u=!0,i=t}if(o===_&&void 0!==t._state)this._settledAt(t._state,e,t._result);else if("function"!=typeof o)this._remaining--,this._result[e]=t;else if(n===D){var a=new n(L);u?A(a,i):T(a,t,o),this._willSettleAt(a,e)}else this._willSettleAt(new n((function(e){return e(t)})),e)}else this._willSettleAt(r(t),e)},t.prototype._settledAt=function(t,e,n){var r=this.promise;void 0===r._state&&(this._remaining--,2===t?A(r,n):this._result[e]=n),0===this._remaining&&M(r,this._result)},t.prototype._willSettleAt=function(t,e){var n=this;q(t,void 0,(function(t){return n._settledAt(1,e,t)}),(function(t){return n._settledAt(2,e,t)}))},t}(),D=function(){function e(t){this[x]=C++,this._result=this._state=void 0,this._subscribers=[],L!==t&&("function"!=typeof t&&function(){throw new TypeError("You must pass a resolver function as the first argument to the promise constructor")}(),this instanceof e?function(t,e){try{e((function(e){j(t,e)}),(function(e){A(t,e)}))}catch(e){A(t,e)}}(this,t):function(){throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.")}())}return e.prototype.catch=function(t){return this.then(null,t)},e.prototype.finally=function(e){var n=this.constructor;return t(e)?this.then((function(t){return n.resolve(e()).then((function(){return t}))}),(function(t){return n.resolve(e()).then((function(){throw t}))})):this.then(e,e)},e}();return D.prototype.then=_,D.all=function(t){return new P(this,t).promise},D.race=function(t){var e=this;return r(t)?new e((function(n,r){for(var o=t.length,i=0;i<o;i++)e.resolve(t[i]).then(n,r)})):new e((function(t,e){return e(new TypeError("You must pass an array to race."))}))},D.resolve=S,D.reject=function(t){var e=new this(L);return A(e,t),e},D._setScheduler=function(t){u=t},D._setAsap=function(t){a=t},D._asap=a,D.polyfill=function(){var t=void 0;if(void 0!==n)t=n;else if("undefined"!=typeof self)t=self;else try{t=Function("return this")()}catch(t){throw new Error("polyfill failed because global object is unavailable in this environment")}var e=t.Promise;if(e){var r=null;try{r=Object.prototype.toString.call(e.resolve())}catch(t){}if("[object Promise]"===r&&!e.cast)return}t.Promise=D},D.Promise=D,D},t.exports=r()}).call(this,n(9),n(0))},function(t,e){var n,r,o=t.exports={};function i(){throw new Error("setTimeout has not been defined")}function u(){throw new Error("clearTimeout has not been defined")}function a(t){if(n===setTimeout)return setTimeout(t,0);if((n===i||!n)&&setTimeout)return n=setTimeout,setTimeout(t,0);try{return n(t,0)}catch(e){try{return n.call(null,t,0)}catch(e){return n.call(this,t,0)}}}!function(){try{n="function"==typeof setTimeout?setTimeout:i}catch(t){n=i}try{r="function"==typeof clearTimeout?clearTimeout:u}catch(t){r=u}}();var s,c=[],l=!1,f=-1;function h(){l&&s&&(l=!1,s.length?c=s.concat(c):f=-1,c.length&&d())}function d(){if(!l){var t=a(h);l=!0;for(var e=c.length;e;){for(s=c,c=[];++f<e;)s&&s[f].run();f=-1,e=c.length}s=null,l=!1,function(t){if(r===clearTimeout)return clearTimeout(t);if((r===u||!r)&&clearTimeout)return r=clearTimeout,clearTimeout(t);try{r(t)}catch(e){try{return r.call(null,t)}catch(e){return r.call(this,t)}}}(t)}}function p(t,e){this.fun=t,this.array=e}function v(){}o.nextTick=function(t){var e=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)e[n-1]=arguments[n];c.push(new p(t,e)),1!==c.length||l||a(d)},p.prototype.run=function(){this.fun.apply(null,this.array)},o.title="browser",o.browser=!0,o.env={},o.argv=[],o.version="",o.versions={},o.on=v,o.addListener=v,o.once=v,o.off=v,o.removeListener=v,o.removeAllListeners=v,o.emit=v,o.prependListener=v,o.prependOnceListener=v,o.listeners=function(t){return[]},o.binding=function(t){throw new Error("process.binding is not supported")},o.cwd=function(){return"/"},o.chdir=function(t){throw new Error("process.chdir is not supported")},o.umask=function(){return 0}},function(t,e){t.exports=function(){var t=1,e=document.querySelectorAll(".slider-item"),n=document.querySelector(".prev"),r=document.querySelector(".next"),o=document.querySelector(".slider-dots"),i=document.querySelectorAll(".dot");function u(n){n>e.length?t=1:n<1&&(t=e.length),e.forEach((function(t){t.style.display="none"})),i.forEach((function(t){t.classList.remove("dot-active")})),e[t-1].style.display="block",i[t-1].classList.add("dot-active")}function a(e){u(t+=e)}u(t),n.addEventListener("click",(function(){a(-1)})),r.addEventListener("click",(function(){a(1)})),o.addEventListener("click",(function(e){for(var n=0;n<i.length+1;n++)e.target.classList.contains("dot")&&e.target==i[n-1]&&u(t=n)}))}},function(t,e){t.exports=function(){var t=document.querySelectorAll(".counter-block-input")[0],e=document.querySelectorAll(".counter-block-input")[1],n=document.getElementById("select"),r=document.getElementById("total"),o=0,i=0,u=0;r.innerHTML=0,t.addEventListener("change",(function(){o=+this.value,u=+i&&+o?4e3*(i+o):0,""==e.value?(r.innerHTML=0,console.log(u),console.log(Boolean(u))):r.innerHTML=u,e.addEventListener("change",(function(){i=+this.value,u=+i&&+o?4e3*(i+o):0,""==t.value?(r.innerHTML=0,console.log(u),console.log(Boolean(u))):r.innerHTML=u}))})),n.addEventListener("change",(function(){if(""==e.value||""==t.value)r.innerHTML=0;else{var n=u;r.innerHTML=n*this.options[this.selectedIndex].value}}))}}]);
+ */
+
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	undefined;
+}(this, (function () { 'use strict';
+
+function objectOrFunction(x) {
+  var type = typeof x;
+  return x !== null && (type === 'object' || type === 'function');
+}
+
+function isFunction(x) {
+  return typeof x === 'function';
+}
+
+
+
+var _isArray = void 0;
+if (Array.isArray) {
+  _isArray = Array.isArray;
+} else {
+  _isArray = function (x) {
+    return Object.prototype.toString.call(x) === '[object Array]';
+  };
+}
+
+var isArray = _isArray;
+
+var len = 0;
+var vertxNext = void 0;
+var customSchedulerFn = void 0;
+
+var asap = function asap(callback, arg) {
+  queue[len] = callback;
+  queue[len + 1] = arg;
+  len += 2;
+  if (len === 2) {
+    // If len is 2, that means that we need to schedule an async flush.
+    // If additional callbacks are queued before the queue is flushed, they
+    // will be processed by this flush that we are scheduling.
+    if (customSchedulerFn) {
+      customSchedulerFn(flush);
+    } else {
+      scheduleFlush();
+    }
+  }
+};
+
+function setScheduler(scheduleFn) {
+  customSchedulerFn = scheduleFn;
+}
+
+function setAsap(asapFn) {
+  asap = asapFn;
+}
+
+var browserWindow = typeof window !== 'undefined' ? window : undefined;
+var browserGlobal = browserWindow || {};
+var BrowserMutationObserver = browserGlobal.MutationObserver || browserGlobal.WebKitMutationObserver;
+var isNode = typeof self === 'undefined' && typeof process !== 'undefined' && {}.toString.call(process) === '[object process]';
+
+// test for web worker but not in IE10
+var isWorker = typeof Uint8ClampedArray !== 'undefined' && typeof importScripts !== 'undefined' && typeof MessageChannel !== 'undefined';
+
+// node
+function useNextTick() {
+  // node version 0.10.x displays a deprecation warning when nextTick is used recursively
+  // see https://github.com/cujojs/when/issues/410 for details
+  return function () {
+    return process.nextTick(flush);
+  };
+}
+
+// vertx
+function useVertxTimer() {
+  if (typeof vertxNext !== 'undefined') {
+    return function () {
+      vertxNext(flush);
+    };
+  }
+
+  return useSetTimeout();
+}
+
+function useMutationObserver() {
+  var iterations = 0;
+  var observer = new BrowserMutationObserver(flush);
+  var node = document.createTextNode('');
+  observer.observe(node, { characterData: true });
+
+  return function () {
+    node.data = iterations = ++iterations % 2;
+  };
+}
+
+// web worker
+function useMessageChannel() {
+  var channel = new MessageChannel();
+  channel.port1.onmessage = flush;
+  return function () {
+    return channel.port2.postMessage(0);
+  };
+}
+
+function useSetTimeout() {
+  // Store setTimeout reference so es6-promise will be unaffected by
+  // other code modifying setTimeout (like sinon.useFakeTimers())
+  var globalSetTimeout = setTimeout;
+  return function () {
+    return globalSetTimeout(flush, 1);
+  };
+}
+
+var queue = new Array(1000);
+function flush() {
+  for (var i = 0; i < len; i += 2) {
+    var callback = queue[i];
+    var arg = queue[i + 1];
+
+    callback(arg);
+
+    queue[i] = undefined;
+    queue[i + 1] = undefined;
+  }
+
+  len = 0;
+}
+
+function attemptVertx() {
+  try {
+    var vertx = Function('return this')().require('vertx');
+    vertxNext = vertx.runOnLoop || vertx.runOnContext;
+    return useVertxTimer();
+  } catch (e) {
+    return useSetTimeout();
+  }
+}
+
+var scheduleFlush = void 0;
+// Decide what async method to use to triggering processing of queued callbacks:
+if (isNode) {
+  scheduleFlush = useNextTick();
+} else if (BrowserMutationObserver) {
+  scheduleFlush = useMutationObserver();
+} else if (isWorker) {
+  scheduleFlush = useMessageChannel();
+} else if (browserWindow === undefined && "function" === 'function') {
+  scheduleFlush = attemptVertx();
+} else {
+  scheduleFlush = useSetTimeout();
+}
+
+function then(onFulfillment, onRejection) {
+  var parent = this;
+
+  var child = new this.constructor(noop);
+
+  if (child[PROMISE_ID] === undefined) {
+    makePromise(child);
+  }
+
+  var _state = parent._state;
+
+
+  if (_state) {
+    var callback = arguments[_state - 1];
+    asap(function () {
+      return invokeCallback(_state, child, callback, parent._result);
+    });
+  } else {
+    subscribe(parent, child, onFulfillment, onRejection);
+  }
+
+  return child;
+}
+
+/**
+  `Promise.resolve` returns a promise that will become resolved with the
+  passed `value`. It is shorthand for the following:
+
+  ```javascript
+  let promise = new Promise(function(resolve, reject){
+    resolve(1);
+  });
+
+  promise.then(function(value){
+    // value === 1
+  });
+  ```
+
+  Instead of writing the above, your code now simply becomes the following:
+
+  ```javascript
+  let promise = Promise.resolve(1);
+
+  promise.then(function(value){
+    // value === 1
+  });
+  ```
+
+  @method resolve
+  @static
+  @param {Any} value value that the returned promise will be resolved with
+  Useful for tooling.
+  @return {Promise} a promise that will become fulfilled with the given
+  `value`
+*/
+function resolve$1(object) {
+  /*jshint validthis:true */
+  var Constructor = this;
+
+  if (object && typeof object === 'object' && object.constructor === Constructor) {
+    return object;
+  }
+
+  var promise = new Constructor(noop);
+  resolve(promise, object);
+  return promise;
+}
+
+var PROMISE_ID = Math.random().toString(36).substring(2);
+
+function noop() {}
+
+var PENDING = void 0;
+var FULFILLED = 1;
+var REJECTED = 2;
+
+function selfFulfillment() {
+  return new TypeError("You cannot resolve a promise with itself");
+}
+
+function cannotReturnOwn() {
+  return new TypeError('A promises callback cannot return that same promise.');
+}
+
+function tryThen(then$$1, value, fulfillmentHandler, rejectionHandler) {
+  try {
+    then$$1.call(value, fulfillmentHandler, rejectionHandler);
+  } catch (e) {
+    return e;
+  }
+}
+
+function handleForeignThenable(promise, thenable, then$$1) {
+  asap(function (promise) {
+    var sealed = false;
+    var error = tryThen(then$$1, thenable, function (value) {
+      if (sealed) {
+        return;
+      }
+      sealed = true;
+      if (thenable !== value) {
+        resolve(promise, value);
+      } else {
+        fulfill(promise, value);
+      }
+    }, function (reason) {
+      if (sealed) {
+        return;
+      }
+      sealed = true;
+
+      reject(promise, reason);
+    }, 'Settle: ' + (promise._label || ' unknown promise'));
+
+    if (!sealed && error) {
+      sealed = true;
+      reject(promise, error);
+    }
+  }, promise);
+}
+
+function handleOwnThenable(promise, thenable) {
+  if (thenable._state === FULFILLED) {
+    fulfill(promise, thenable._result);
+  } else if (thenable._state === REJECTED) {
+    reject(promise, thenable._result);
+  } else {
+    subscribe(thenable, undefined, function (value) {
+      return resolve(promise, value);
+    }, function (reason) {
+      return reject(promise, reason);
+    });
+  }
+}
+
+function handleMaybeThenable(promise, maybeThenable, then$$1) {
+  if (maybeThenable.constructor === promise.constructor && then$$1 === then && maybeThenable.constructor.resolve === resolve$1) {
+    handleOwnThenable(promise, maybeThenable);
+  } else {
+    if (then$$1 === undefined) {
+      fulfill(promise, maybeThenable);
+    } else if (isFunction(then$$1)) {
+      handleForeignThenable(promise, maybeThenable, then$$1);
+    } else {
+      fulfill(promise, maybeThenable);
+    }
+  }
+}
+
+function resolve(promise, value) {
+  if (promise === value) {
+    reject(promise, selfFulfillment());
+  } else if (objectOrFunction(value)) {
+    var then$$1 = void 0;
+    try {
+      then$$1 = value.then;
+    } catch (error) {
+      reject(promise, error);
+      return;
+    }
+    handleMaybeThenable(promise, value, then$$1);
+  } else {
+    fulfill(promise, value);
+  }
+}
+
+function publishRejection(promise) {
+  if (promise._onerror) {
+    promise._onerror(promise._result);
+  }
+
+  publish(promise);
+}
+
+function fulfill(promise, value) {
+  if (promise._state !== PENDING) {
+    return;
+  }
+
+  promise._result = value;
+  promise._state = FULFILLED;
+
+  if (promise._subscribers.length !== 0) {
+    asap(publish, promise);
+  }
+}
+
+function reject(promise, reason) {
+  if (promise._state !== PENDING) {
+    return;
+  }
+  promise._state = REJECTED;
+  promise._result = reason;
+
+  asap(publishRejection, promise);
+}
+
+function subscribe(parent, child, onFulfillment, onRejection) {
+  var _subscribers = parent._subscribers;
+  var length = _subscribers.length;
+
+
+  parent._onerror = null;
+
+  _subscribers[length] = child;
+  _subscribers[length + FULFILLED] = onFulfillment;
+  _subscribers[length + REJECTED] = onRejection;
+
+  if (length === 0 && parent._state) {
+    asap(publish, parent);
+  }
+}
+
+function publish(promise) {
+  var subscribers = promise._subscribers;
+  var settled = promise._state;
+
+  if (subscribers.length === 0) {
+    return;
+  }
+
+  var child = void 0,
+      callback = void 0,
+      detail = promise._result;
+
+  for (var i = 0; i < subscribers.length; i += 3) {
+    child = subscribers[i];
+    callback = subscribers[i + settled];
+
+    if (child) {
+      invokeCallback(settled, child, callback, detail);
+    } else {
+      callback(detail);
+    }
+  }
+
+  promise._subscribers.length = 0;
+}
+
+function invokeCallback(settled, promise, callback, detail) {
+  var hasCallback = isFunction(callback),
+      value = void 0,
+      error = void 0,
+      succeeded = true;
+
+  if (hasCallback) {
+    try {
+      value = callback(detail);
+    } catch (e) {
+      succeeded = false;
+      error = e;
+    }
+
+    if (promise === value) {
+      reject(promise, cannotReturnOwn());
+      return;
+    }
+  } else {
+    value = detail;
+  }
+
+  if (promise._state !== PENDING) {
+    // noop
+  } else if (hasCallback && succeeded) {
+    resolve(promise, value);
+  } else if (succeeded === false) {
+    reject(promise, error);
+  } else if (settled === FULFILLED) {
+    fulfill(promise, value);
+  } else if (settled === REJECTED) {
+    reject(promise, value);
+  }
+}
+
+function initializePromise(promise, resolver) {
+  try {
+    resolver(function resolvePromise(value) {
+      resolve(promise, value);
+    }, function rejectPromise(reason) {
+      reject(promise, reason);
+    });
+  } catch (e) {
+    reject(promise, e);
+  }
+}
+
+var id = 0;
+function nextId() {
+  return id++;
+}
+
+function makePromise(promise) {
+  promise[PROMISE_ID] = id++;
+  promise._state = undefined;
+  promise._result = undefined;
+  promise._subscribers = [];
+}
+
+function validationError() {
+  return new Error('Array Methods must be provided an Array');
+}
+
+var Enumerator = function () {
+  function Enumerator(Constructor, input) {
+    this._instanceConstructor = Constructor;
+    this.promise = new Constructor(noop);
+
+    if (!this.promise[PROMISE_ID]) {
+      makePromise(this.promise);
+    }
+
+    if (isArray(input)) {
+      this.length = input.length;
+      this._remaining = input.length;
+
+      this._result = new Array(this.length);
+
+      if (this.length === 0) {
+        fulfill(this.promise, this._result);
+      } else {
+        this.length = this.length || 0;
+        this._enumerate(input);
+        if (this._remaining === 0) {
+          fulfill(this.promise, this._result);
+        }
+      }
+    } else {
+      reject(this.promise, validationError());
+    }
+  }
+
+  Enumerator.prototype._enumerate = function _enumerate(input) {
+    for (var i = 0; this._state === PENDING && i < input.length; i++) {
+      this._eachEntry(input[i], i);
+    }
+  };
+
+  Enumerator.prototype._eachEntry = function _eachEntry(entry, i) {
+    var c = this._instanceConstructor;
+    var resolve$$1 = c.resolve;
+
+
+    if (resolve$$1 === resolve$1) {
+      var _then = void 0;
+      var error = void 0;
+      var didError = false;
+      try {
+        _then = entry.then;
+      } catch (e) {
+        didError = true;
+        error = e;
+      }
+
+      if (_then === then && entry._state !== PENDING) {
+        this._settledAt(entry._state, i, entry._result);
+      } else if (typeof _then !== 'function') {
+        this._remaining--;
+        this._result[i] = entry;
+      } else if (c === Promise$1) {
+        var promise = new c(noop);
+        if (didError) {
+          reject(promise, error);
+        } else {
+          handleMaybeThenable(promise, entry, _then);
+        }
+        this._willSettleAt(promise, i);
+      } else {
+        this._willSettleAt(new c(function (resolve$$1) {
+          return resolve$$1(entry);
+        }), i);
+      }
+    } else {
+      this._willSettleAt(resolve$$1(entry), i);
+    }
+  };
+
+  Enumerator.prototype._settledAt = function _settledAt(state, i, value) {
+    var promise = this.promise;
+
+
+    if (promise._state === PENDING) {
+      this._remaining--;
+
+      if (state === REJECTED) {
+        reject(promise, value);
+      } else {
+        this._result[i] = value;
+      }
+    }
+
+    if (this._remaining === 0) {
+      fulfill(promise, this._result);
+    }
+  };
+
+  Enumerator.prototype._willSettleAt = function _willSettleAt(promise, i) {
+    var enumerator = this;
+
+    subscribe(promise, undefined, function (value) {
+      return enumerator._settledAt(FULFILLED, i, value);
+    }, function (reason) {
+      return enumerator._settledAt(REJECTED, i, reason);
+    });
+  };
+
+  return Enumerator;
+}();
+
+/**
+  `Promise.all` accepts an array of promises, and returns a new promise which
+  is fulfilled with an array of fulfillment values for the passed promises, or
+  rejected with the reason of the first passed promise to be rejected. It casts all
+  elements of the passed iterable to promises as it runs this algorithm.
+
+  Example:
+
+  ```javascript
+  let promise1 = resolve(1);
+  let promise2 = resolve(2);
+  let promise3 = resolve(3);
+  let promises = [ promise1, promise2, promise3 ];
+
+  Promise.all(promises).then(function(array){
+    // The array here would be [ 1, 2, 3 ];
+  });
+  ```
+
+  If any of the `promises` given to `all` are rejected, the first promise
+  that is rejected will be given as an argument to the returned promises's
+  rejection handler. For example:
+
+  Example:
+
+  ```javascript
+  let promise1 = resolve(1);
+  let promise2 = reject(new Error("2"));
+  let promise3 = reject(new Error("3"));
+  let promises = [ promise1, promise2, promise3 ];
+
+  Promise.all(promises).then(function(array){
+    // Code here never runs because there are rejected promises!
+  }, function(error) {
+    // error.message === "2"
+  });
+  ```
+
+  @method all
+  @static
+  @param {Array} entries array of promises
+  @param {String} label optional string for labeling the promise.
+  Useful for tooling.
+  @return {Promise} promise that is fulfilled when all `promises` have been
+  fulfilled, or rejected if any of them become rejected.
+  @static
+*/
+function all(entries) {
+  return new Enumerator(this, entries).promise;
+}
+
+/**
+  `Promise.race` returns a new promise which is settled in the same way as the
+  first passed promise to settle.
+
+  Example:
+
+  ```javascript
+  let promise1 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 1');
+    }, 200);
+  });
+
+  let promise2 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 2');
+    }, 100);
+  });
+
+  Promise.race([promise1, promise2]).then(function(result){
+    // result === 'promise 2' because it was resolved before promise1
+    // was resolved.
+  });
+  ```
+
+  `Promise.race` is deterministic in that only the state of the first
+  settled promise matters. For example, even if other promises given to the
+  `promises` array argument are resolved, but the first settled promise has
+  become rejected before the other promises became fulfilled, the returned
+  promise will become rejected:
+
+  ```javascript
+  let promise1 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 1');
+    }, 200);
+  });
+
+  let promise2 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      reject(new Error('promise 2'));
+    }, 100);
+  });
+
+  Promise.race([promise1, promise2]).then(function(result){
+    // Code here never runs
+  }, function(reason){
+    // reason.message === 'promise 2' because promise 2 became rejected before
+    // promise 1 became fulfilled
+  });
+  ```
+
+  An example real-world use case is implementing timeouts:
+
+  ```javascript
+  Promise.race([ajax('foo.json'), timeout(5000)])
+  ```
+
+  @method race
+  @static
+  @param {Array} promises array of promises to observe
+  Useful for tooling.
+  @return {Promise} a promise which settles in the same way as the first passed
+  promise to settle.
+*/
+function race(entries) {
+  /*jshint validthis:true */
+  var Constructor = this;
+
+  if (!isArray(entries)) {
+    return new Constructor(function (_, reject) {
+      return reject(new TypeError('You must pass an array to race.'));
+    });
+  } else {
+    return new Constructor(function (resolve, reject) {
+      var length = entries.length;
+      for (var i = 0; i < length; i++) {
+        Constructor.resolve(entries[i]).then(resolve, reject);
+      }
+    });
+  }
+}
+
+/**
+  `Promise.reject` returns a promise rejected with the passed `reason`.
+  It is shorthand for the following:
+
+  ```javascript
+  let promise = new Promise(function(resolve, reject){
+    reject(new Error('WHOOPS'));
+  });
+
+  promise.then(function(value){
+    // Code here doesn't run because the promise is rejected!
+  }, function(reason){
+    // reason.message === 'WHOOPS'
+  });
+  ```
+
+  Instead of writing the above, your code now simply becomes the following:
+
+  ```javascript
+  let promise = Promise.reject(new Error('WHOOPS'));
+
+  promise.then(function(value){
+    // Code here doesn't run because the promise is rejected!
+  }, function(reason){
+    // reason.message === 'WHOOPS'
+  });
+  ```
+
+  @method reject
+  @static
+  @param {Any} reason value that the returned promise will be rejected with.
+  Useful for tooling.
+  @return {Promise} a promise rejected with the given `reason`.
+*/
+function reject$1(reason) {
+  /*jshint validthis:true */
+  var Constructor = this;
+  var promise = new Constructor(noop);
+  reject(promise, reason);
+  return promise;
+}
+
+function needsResolver() {
+  throw new TypeError('You must pass a resolver function as the first argument to the promise constructor');
+}
+
+function needsNew() {
+  throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.");
+}
+
+/**
+  Promise objects represent the eventual result of an asynchronous operation. The
+  primary way of interacting with a promise is through its `then` method, which
+  registers callbacks to receive either a promise's eventual value or the reason
+  why the promise cannot be fulfilled.
+
+  Terminology
+  -----------
+
+  - `promise` is an object or function with a `then` method whose behavior conforms to this specification.
+  - `thenable` is an object or function that defines a `then` method.
+  - `value` is any legal JavaScript value (including undefined, a thenable, or a promise).
+  - `exception` is a value that is thrown using the throw statement.
+  - `reason` is a value that indicates why a promise was rejected.
+  - `settled` the final resting state of a promise, fulfilled or rejected.
+
+  A promise can be in one of three states: pending, fulfilled, or rejected.
+
+  Promises that are fulfilled have a fulfillment value and are in the fulfilled
+  state.  Promises that are rejected have a rejection reason and are in the
+  rejected state.  A fulfillment value is never a thenable.
+
+  Promises can also be said to *resolve* a value.  If this value is also a
+  promise, then the original promise's settled state will match the value's
+  settled state.  So a promise that *resolves* a promise that rejects will
+  itself reject, and a promise that *resolves* a promise that fulfills will
+  itself fulfill.
+
+
+  Basic Usage:
+  ------------
+
+  ```js
+  let promise = new Promise(function(resolve, reject) {
+    // on success
+    resolve(value);
+
+    // on failure
+    reject(reason);
+  });
+
+  promise.then(function(value) {
+    // on fulfillment
+  }, function(reason) {
+    // on rejection
+  });
+  ```
+
+  Advanced Usage:
+  ---------------
+
+  Promises shine when abstracting away asynchronous interactions such as
+  `XMLHttpRequest`s.
+
+  ```js
+  function getJSON(url) {
+    return new Promise(function(resolve, reject){
+      let xhr = new XMLHttpRequest();
+
+      xhr.open('GET', url);
+      xhr.onreadystatechange = handler;
+      xhr.responseType = 'json';
+      xhr.setRequestHeader('Accept', 'application/json');
+      xhr.send();
+
+      function handler() {
+        if (this.readyState === this.DONE) {
+          if (this.status === 200) {
+            resolve(this.response);
+          } else {
+            reject(new Error('getJSON: `' + url + '` failed with status: [' + this.status + ']'));
+          }
+        }
+      };
+    });
+  }
+
+  getJSON('/posts.json').then(function(json) {
+    // on fulfillment
+  }, function(reason) {
+    // on rejection
+  });
+  ```
+
+  Unlike callbacks, promises are great composable primitives.
+
+  ```js
+  Promise.all([
+    getJSON('/posts'),
+    getJSON('/comments')
+  ]).then(function(values){
+    values[0] // => postsJSON
+    values[1] // => commentsJSON
+
+    return values;
+  });
+  ```
+
+  @class Promise
+  @param {Function} resolver
+  Useful for tooling.
+  @constructor
+*/
+
+var Promise$1 = function () {
+  function Promise(resolver) {
+    this[PROMISE_ID] = nextId();
+    this._result = this._state = undefined;
+    this._subscribers = [];
+
+    if (noop !== resolver) {
+      typeof resolver !== 'function' && needsResolver();
+      this instanceof Promise ? initializePromise(this, resolver) : needsNew();
+    }
+  }
+
+  /**
+  The primary way of interacting with a promise is through its `then` method,
+  which registers callbacks to receive either a promise's eventual value or the
+  reason why the promise cannot be fulfilled.
+   ```js
+  findUser().then(function(user){
+    // user is available
+  }, function(reason){
+    // user is unavailable, and you are given the reason why
+  });
+  ```
+   Chaining
+  --------
+   The return value of `then` is itself a promise.  This second, 'downstream'
+  promise is resolved with the return value of the first promise's fulfillment
+  or rejection handler, or rejected if the handler throws an exception.
+   ```js
+  findUser().then(function (user) {
+    return user.name;
+  }, function (reason) {
+    return 'default name';
+  }).then(function (userName) {
+    // If `findUser` fulfilled, `userName` will be the user's name, otherwise it
+    // will be `'default name'`
+  });
+   findUser().then(function (user) {
+    throw new Error('Found user, but still unhappy');
+  }, function (reason) {
+    throw new Error('`findUser` rejected and we're unhappy');
+  }).then(function (value) {
+    // never reached
+  }, function (reason) {
+    // if `findUser` fulfilled, `reason` will be 'Found user, but still unhappy'.
+    // If `findUser` rejected, `reason` will be '`findUser` rejected and we're unhappy'.
+  });
+  ```
+  If the downstream promise does not specify a rejection handler, rejection reasons will be propagated further downstream.
+   ```js
+  findUser().then(function (user) {
+    throw new PedagogicalException('Upstream error');
+  }).then(function (value) {
+    // never reached
+  }).then(function (value) {
+    // never reached
+  }, function (reason) {
+    // The `PedgagocialException` is propagated all the way down to here
+  });
+  ```
+   Assimilation
+  ------------
+   Sometimes the value you want to propagate to a downstream promise can only be
+  retrieved asynchronously. This can be achieved by returning a promise in the
+  fulfillment or rejection handler. The downstream promise will then be pending
+  until the returned promise is settled. This is called *assimilation*.
+   ```js
+  findUser().then(function (user) {
+    return findCommentsByAuthor(user);
+  }).then(function (comments) {
+    // The user's comments are now available
+  });
+  ```
+   If the assimliated promise rejects, then the downstream promise will also reject.
+   ```js
+  findUser().then(function (user) {
+    return findCommentsByAuthor(user);
+  }).then(function (comments) {
+    // If `findCommentsByAuthor` fulfills, we'll have the value here
+  }, function (reason) {
+    // If `findCommentsByAuthor` rejects, we'll have the reason here
+  });
+  ```
+   Simple Example
+  --------------
+   Synchronous Example
+   ```javascript
+  let result;
+   try {
+    result = findResult();
+    // success
+  } catch(reason) {
+    // failure
+  }
+  ```
+   Errback Example
+   ```js
+  findResult(function(result, err){
+    if (err) {
+      // failure
+    } else {
+      // success
+    }
+  });
+  ```
+   Promise Example;
+   ```javascript
+  findResult().then(function(result){
+    // success
+  }, function(reason){
+    // failure
+  });
+  ```
+   Advanced Example
+  --------------
+   Synchronous Example
+   ```javascript
+  let author, books;
+   try {
+    author = findAuthor();
+    books  = findBooksByAuthor(author);
+    // success
+  } catch(reason) {
+    // failure
+  }
+  ```
+   Errback Example
+   ```js
+   function foundBooks(books) {
+   }
+   function failure(reason) {
+   }
+   findAuthor(function(author, err){
+    if (err) {
+      failure(err);
+      // failure
+    } else {
+      try {
+        findBoooksByAuthor(author, function(books, err) {
+          if (err) {
+            failure(err);
+          } else {
+            try {
+              foundBooks(books);
+            } catch(reason) {
+              failure(reason);
+            }
+          }
+        });
+      } catch(error) {
+        failure(err);
+      }
+      // success
+    }
+  });
+  ```
+   Promise Example;
+   ```javascript
+  findAuthor().
+    then(findBooksByAuthor).
+    then(function(books){
+      // found books
+  }).catch(function(reason){
+    // something went wrong
+  });
+  ```
+   @method then
+  @param {Function} onFulfilled
+  @param {Function} onRejected
+  Useful for tooling.
+  @return {Promise}
+  */
+
+  /**
+  `catch` is simply sugar for `then(undefined, onRejection)` which makes it the same
+  as the catch block of a try/catch statement.
+  ```js
+  function findAuthor(){
+  throw new Error('couldn't find that author');
+  }
+  // synchronous
+  try {
+  findAuthor();
+  } catch(reason) {
+  // something went wrong
+  }
+  // async with promises
+  findAuthor().catch(function(reason){
+  // something went wrong
+  });
+  ```
+  @method catch
+  @param {Function} onRejection
+  Useful for tooling.
+  @return {Promise}
+  */
+
+
+  Promise.prototype.catch = function _catch(onRejection) {
+    return this.then(null, onRejection);
+  };
+
+  /**
+    `finally` will be invoked regardless of the promise's fate just as native
+    try/catch/finally behaves
+  
+    Synchronous example:
+  
+    ```js
+    findAuthor() {
+      if (Math.random() > 0.5) {
+        throw new Error();
+      }
+      return new Author();
+    }
+  
+    try {
+      return findAuthor(); // succeed or fail
+    } catch(error) {
+      return findOtherAuther();
+    } finally {
+      // always runs
+      // doesn't affect the return value
+    }
+    ```
+  
+    Asynchronous example:
+  
+    ```js
+    findAuthor().catch(function(reason){
+      return findOtherAuther();
+    }).finally(function(){
+      // author was either found, or not
+    });
+    ```
+  
+    @method finally
+    @param {Function} callback
+    @return {Promise}
+  */
+
+
+  Promise.prototype.finally = function _finally(callback) {
+    var promise = this;
+    var constructor = promise.constructor;
+
+    if (isFunction(callback)) {
+      return promise.then(function (value) {
+        return constructor.resolve(callback()).then(function () {
+          return value;
+        });
+      }, function (reason) {
+        return constructor.resolve(callback()).then(function () {
+          throw reason;
+        });
+      });
+    }
+
+    return promise.then(callback, callback);
+  };
+
+  return Promise;
+}();
+
+Promise$1.prototype.then = then;
+Promise$1.all = all;
+Promise$1.race = race;
+Promise$1.resolve = resolve$1;
+Promise$1.reject = reject$1;
+Promise$1._setScheduler = setScheduler;
+Promise$1._setAsap = setAsap;
+Promise$1._asap = asap;
+
+/*global self*/
+function polyfill() {
+  var local = void 0;
+
+  if (typeof global !== 'undefined') {
+    local = global;
+  } else if (typeof self !== 'undefined') {
+    local = self;
+  } else {
+    try {
+      local = Function('return this')();
+    } catch (e) {
+      throw new Error('polyfill failed because global object is unavailable in this environment');
+    }
+  }
+
+  var P = local.Promise;
+
+  if (P) {
+    var promiseToString = null;
+    try {
+      promiseToString = Object.prototype.toString.call(P.resolve());
+    } catch (e) {
+      // silently ignored
+    }
+
+    if (promiseToString === '[object Promise]' && !P.cast) {
+      return;
+    }
+  }
+
+  local.Promise = Promise$1;
+}
+
+// Strange compat..
+Promise$1.polyfill = polyfill;
+Promise$1.Promise = Promise$1;
+
+return Promise$1;
+
+})));
+
+
+
+//# sourceMappingURL=es6-promise.map
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js"), __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/formdata-polyfill/formdata.min.js":
+/*!********************************************************!*\
+  !*** ./node_modules/formdata-polyfill/formdata.min.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {;(function(){var k;function m(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}var p="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){a!=Array.prototype&&a!=Object.prototype&&(a[b]=c.value)},q="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this;function r(){r=function(){};q.Symbol||(q.Symbol=u)}function v(a,b){this.s=a;p(this,"description",{configurable:!0,writable:!0,value:b})}
+v.prototype.toString=function(){return this.s};var u=function(){function a(c){if(this instanceof a)throw new TypeError("Symbol is not a constructor");return new v("jscomp_symbol_"+(c||"")+"_"+b++,c)}var b=0;return a}();function w(){r();var a=q.Symbol.iterator;a||(a=q.Symbol.iterator=q.Symbol("Symbol.iterator"));"function"!=typeof Array.prototype[a]&&p(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return x(m(this))}});w=function(){}}
+function x(a){w();a={next:a};a[q.Symbol.iterator]=function(){return this};return a}function y(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):{next:m(a)}}var z;if("function"==typeof Object.setPrototypeOf)z=Object.setPrototypeOf;else{var A;a:{var B={v:!0},C={};try{C.__proto__=B;A=C.v;break a}catch(a){}A=!1}z=A?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var D=z;
+function E(){this.h=!1;this.c=null;this.o=void 0;this.b=1;this.m=this.w=0;this.g=null}function F(a){if(a.h)throw new TypeError("Generator is already running");a.h=!0}E.prototype.i=function(a){this.o=a};E.prototype.j=function(a){this.g={A:a,B:!0};this.b=this.w||this.m};E.prototype["return"]=function(a){this.g={"return":a};this.b=this.m};function G(a,b,c){a.b=c;return{value:b}}function H(a){this.C=a;this.l=[];for(var b in a)this.l.push(b);this.l.reverse()}function I(a){this.a=new E;this.D=a}
+I.prototype.i=function(a){F(this.a);if(this.a.c)return J(this,this.a.c.next,a,this.a.i);this.a.i(a);return K(this)};function L(a,b){F(a.a);var c=a.a.c;if(c)return J(a,"return"in c?c["return"]:function(d){return{value:d,done:!0}},b,a.a["return"]);a.a["return"](b);return K(a)}I.prototype.j=function(a){F(this.a);if(this.a.c)return J(this,this.a.c["throw"],a,this.a.i);this.a.j(a);return K(this)};
+function J(a,b,c,d){try{var e=b.call(a.a.c,c);if(!(e instanceof Object))throw new TypeError("Iterator result "+e+" is not an object");if(!e.done)return a.a.h=!1,e;var f=e.value}catch(g){return a.a.c=null,a.a.j(g),K(a)}a.a.c=null;d.call(a.a,f);return K(a)}function K(a){for(;a.a.b;)try{var b=a.D(a.a);if(b)return a.a.h=!1,{value:b.value,done:!1}}catch(c){a.a.o=void 0,a.a.j(c)}a.a.h=!1;if(a.a.g){b=a.a.g;a.a.g=null;if(b.B)throw b.A;return{value:b["return"],done:!0}}return{value:void 0,done:!0}}
+function M(a){this.next=function(b){return a.i(b)};this["throw"]=function(b){return a.j(b)};this["return"]=function(b){return L(a,b)};w();this[Symbol.iterator]=function(){return this}}function N(a,b){var c=new M(new I(b));D&&D(c,a.prototype);return c}
+if("undefined"!==typeof Blob&&("undefined"===typeof FormData||!FormData.prototype.keys)){var O=function(a,b){for(var c=0;c<a.length;c++)b(a[c])},P=function(a,b,c){return b instanceof Blob?[String(a),b,void 0!==c?c+"":"string"===typeof b.name?b.name:"blob"]:[String(a),String(b)]},Q=function(a,b){if(a.length<b)throw new TypeError(b+" argument required, but only "+a.length+" present.");},S=function(a){var b=y(a);a=b.next().value;b=b.next().value;a instanceof Blob&&(a=new File([a],b,{type:a.type,lastModified:a.lastModified}));
+return a},T="object"===typeof window?window:"object"===typeof self?self:this,U=T.FormData,V=T.XMLHttpRequest&&T.XMLHttpRequest.prototype.send,W=T.Request&&T.fetch,X=T.navigator&&T.navigator.sendBeacon;r();var Y=T.Symbol&&Symbol.toStringTag;Y&&(Blob.prototype[Y]||(Blob.prototype[Y]="Blob"),"File"in T&&!File.prototype[Y]&&(File.prototype[Y]="File"));try{new File([],"")}catch(a){T.File=function(b,c,d){b=new Blob(b,d);d=d&&void 0!==d.lastModified?new Date(d.lastModified):new Date;Object.defineProperties(b,
+{name:{value:c},lastModifiedDate:{value:d},lastModified:{value:+d},toString:{value:function(){return"[object File]"}}});Y&&Object.defineProperty(b,Y,{value:"File"});return b}}r();w();var Z=function(a){this.f=Object.create(null);if(!a)return this;var b=this;O(a.elements,function(c){if(c.name&&!c.disabled&&"submit"!==c.type&&"button"!==c.type)if("file"===c.type){var d=c.files&&c.files.length?c.files:[new File([],"",{type:"application/octet-stream"})];O(d,function(e){b.append(c.name,e)})}else"select-multiple"===
+c.type||"select-one"===c.type?O(c.options,function(e){!e.disabled&&e.selected&&b.append(c.name,e.value)}):"checkbox"===c.type||"radio"===c.type?c.checked&&b.append(c.name,c.value):(d="textarea"===c.type?c.value.replace(/\r\n/g,"\n").replace(/\n/g,"\r\n"):c.value,b.append(c.name,d))})};k=Z.prototype;k.append=function(a,b,c){Q(arguments,2);var d=y(P.apply(null,arguments));a=d.next().value;b=d.next().value;c=d.next().value;d=this.f;d[a]||(d[a]=[]);d[a].push([b,c])};k["delete"]=function(a){Q(arguments,
+1);delete this.f[String(a)]};k.entries=function b(){var c=this,d,e,f,g,h,t;return N(b,function(l){switch(l.b){case 1:d=c.f,f=new H(d);case 2:var n;a:{for(n=f;0<n.l.length;){var R=n.l.pop();if(R in n.C){n=R;break a}}n=null}if(null==(e=n)){l.b=0;break}g=y(d[e]);h=g.next();case 5:if(h.done){l.b=2;break}t=h.value;return G(l,[e,S(t)],6);case 6:h=g.next(),l.b=5}})};k.forEach=function(b,c){Q(arguments,1);for(var d=y(this),e=d.next();!e.done;e=d.next()){var f=y(e.value);e=f.next().value;f=f.next().value;
+b.call(c,f,e,this)}};k.get=function(b){Q(arguments,1);var c=this.f;b=String(b);return c[b]?S(c[b][0]):null};k.getAll=function(b){Q(arguments,1);return(this.f[String(b)]||[]).map(S)};k.has=function(b){Q(arguments,1);return String(b)in this.f};k.keys=function c(){var d=this,e,f,g,h,t;return N(c,function(l){1==l.b&&(e=y(d),f=e.next());if(3!=l.b){if(f.done){l.b=0;return}g=f.value;h=y(g);t=h.next().value;return G(l,t,3)}f=e.next();l.b=2})};k.set=function(c,d,e){Q(arguments,2);var f=P.apply(null,arguments);
+this.f[f[0]]=[[f[1],f[2]]]};k.values=function d(){var e=this,f,g,h,t,l;return N(d,function(n){1==n.b&&(f=y(e),g=f.next());if(3!=n.b){if(g.done){n.b=0;return}h=g.value;t=y(h);t.next();l=t.next().value;return G(n,l,3)}g=f.next();n.b=2})};Z.prototype._asNative=function(){for(var d=new U,e=y(this),f=e.next();!f.done;f=e.next()){var g=y(f.value);f=g.next().value;g=g.next().value;d.append(f,g)}return d};Z.prototype._blob=function(){for(var d="----formdata-polyfill-"+Math.random(),e=[],f=y(this),g=f.next();!g.done;g=
+f.next()){var h=y(g.value);g=h.next().value;h=h.next().value;e.push("--"+d+"\r\n");h instanceof Blob?e.push('Content-Disposition: form-data; name="'+g+'"; filename="'+h.name+'"\r\n',"Content-Type: "+(h.type||"application/octet-stream")+"\r\n\r\n",h,"\r\n"):e.push('Content-Disposition: form-data; name="'+g+'"\r\n\r\n'+h+"\r\n")}e.push("--"+d+"--");return new Blob(e,{type:"multipart/form-data; boundary="+d})};Z.prototype[Symbol.iterator]=function(){return this.entries()};Z.prototype.toString=function(){return"[object FormData]"};
+Y&&(Z.prototype[Y]="FormData");if(V){var aa=T.XMLHttpRequest.prototype.setRequestHeader;T.XMLHttpRequest.prototype.setRequestHeader=function(d,e){aa.call(this,d,e);"content-type"===d.toLowerCase()&&(this.u=!0)};T.XMLHttpRequest.prototype.send=function(d){d instanceof Z?(d=d._blob(),this.u||this.setRequestHeader("Content-Type",d.type),V.call(this,d)):V.call(this,d)}}if(W){var ba=T.fetch;T.fetch=function(d,e){e&&e.body&&e.body instanceof Z&&(e.body=e.body._blob());return ba.call(this,d,e)}}X&&(T.navigator.sendBeacon=
+function(d,e){e instanceof Z&&(e=e._asNative());return X.call(this,d,e)});T.FormData=Z};
+})();
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/nodelist-foreach-polyfill/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/nodelist-foreach-polyfill/index.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = function (callback, thisArg) {
+        thisArg = thisArg || window;
+        for (var i = 0; i < this.length; i++) {
+            callback.call(thisArg, this[i], i, this);
+        }
+    };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/process/browser.js":
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ "./src/js/parts/calc.js":
+/*!******************************!*\
+  !*** ./src/js/parts/calc.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function calc() {
+  var persons = document.querySelectorAll('.counter-block-input')[0],
+      restDays = document.querySelectorAll('.counter-block-input')[1],
+      place = document.getElementById('select'),
+      totalValue = document.getElementById('total'),
+      personsSum = 0,
+      daysSum = 0,
+      total = 0;
+  totalValue.innerHTML = 0;
+  persons.addEventListener('change', function () {
+    personsSum = +this.value;
+    total = +daysSum && +personsSum ? (daysSum + personsSum) * 4000 : 0;
+
+    if (restDays.value == '') {
+      totalValue.innerHTML = 0;
+      console.log(total);
+      console.log(Boolean(total));
+    } else {
+      totalValue.innerHTML = total;
+    }
+
+    restDays.addEventListener('change', function () {
+      daysSum = +this.value;
+      total = +daysSum && +personsSum ? (daysSum + personsSum) * 4000 : 0;
+
+      if (persons.value == '') {
+        totalValue.innerHTML = 0;
+        console.log(total);
+        console.log(Boolean(total));
+      } else {
+        totalValue.innerHTML = total;
+      }
+    });
+  });
+  place.addEventListener('change', function () {
+    if (restDays.value == '' || persons.value == '') {
+      totalValue.innerHTML = 0;
+    } else {
+      var a = total;
+      totalValue.innerHTML = a * this.options[this.selectedIndex].value;
+    }
+  });
+}
+
+module.exports = calc;
+
+/***/ }),
+
+/***/ "./src/js/parts/form.js":
+/*!******************************!*\
+  !*** ./src/js/parts/form.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Promise = typeof Promise === 'undefined' ? __webpack_require__(/*! es6-promise */ "./node_modules/es6-promise/dist/es6-promise.js").Promise : Promise;
+
+function form() {
+  var message = {
+    loading: "Загрузка...",
+    success: "Спасибо! Скоро мы с Вами свяжемся!",
+    failure: "Что-то пошло не так"
+  };
+  var form = document.querySelector('.main-form'),
+      input = document.getElementsByTagName('input'),
+      statusMessage = document.createElement('div'),
+      formBottom = document.querySelector('#form');
+  statusMessage.classList.add('status');
+
+  function sendForm(element) {
+    element.addEventListener('submit', function (e) {
+      e.preventDefault();
+      element.appendChild(statusMessage);
+      var formData = new FormData(element);
+      console.log(formData);
+
+      function postData(data) {
+        return new _Promise(function (resolve, reject) {
+          var request = new XMLHttpRequest();
+          request.open('POST', 'server.php');
+          request.setRequestHeader('Content-type', 'application/json, charset=UTF-8');
+
+          request.onreadystatechange = function () {
+            if (request.readyState < 4) {
+              resolve();
+            } else if (request.readyState === 4 && request.status === 200) {
+              resolve();
+            } else {
+              reject();
+            }
+          };
+
+          request.send(data);
+        });
+      }
+
+      function clearInput() {
+        for (var i = 0; i < input.length; i++) {
+          input[i].value = '';
+        }
+      }
+
+      postData(formData).then(function () {
+        return statusMessage.innerHTML = message.loading;
+      }).then(function () {
+        return statusMessage.innerHTML = message.success;
+      }).catch(function () {
+        return console.log("error");
+      }, statusMessage.innerHTML = message.failure).then(clearInput);
+    });
+  }
+
+  sendForm(form);
+  sendForm(formBottom);
+}
+
+module.exports = form;
+
+/***/ }),
+
+/***/ "./src/js/parts/modal.js":
+/*!*******************************!*\
+  !*** ./src/js/parts/modal.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function modal() {
+  var more = document.querySelector('.more'),
+      overlay = document.querySelector('.overlay'),
+      close = document.querySelector('.popup-close');
+  more.addEventListener('click', function () {
+    overlay.style.display = 'block';
+    this.classList.add('more-splash');
+    document.body.style.overflow = 'hidden';
+  });
+  close.addEventListener('click', function () {
+    overlay.style.display = 'none';
+    more.classList.remove('more-splash');
+    document.body.style.overflow = 'auto';
+  });
+}
+
+module.exports = modal;
+
+/***/ }),
+
+/***/ "./src/js/parts/slider.js":
+/*!********************************!*\
+  !*** ./src/js/parts/slider.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function slider() {
+  var slideIndex = 1,
+      slides = document.querySelectorAll('.slider-item'),
+      prev = document.querySelector('.prev'),
+      next = document.querySelector('.next'),
+      dotsWrap = document.querySelector('.slider-dots'),
+      dots = document.querySelectorAll('.dot');
+  showSlides(slideIndex);
+
+  function showSlides(n) {
+    if (n > slides.length) {
+      slideIndex = 1;
+    } else if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    slides.forEach(function (item) {
+      item.style.display = 'none';
+    });
+    dots.forEach(function (item) {
+      item.classList.remove('dot-active');
+    });
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].classList.add('dot-active');
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  prev.addEventListener('click', function () {
+    plusSlides(-1);
+  });
+  next.addEventListener('click', function () {
+    plusSlides(1);
+  });
+  dotsWrap.addEventListener('click', function (event) {
+    for (var i = 0; i < dots.length + 1; i++) {
+      if (event.target.classList.contains('dot') && event.target == dots[i - 1]) {
+        currentSlide(i);
+      }
+    }
+  });
+}
+
+module.exports = slider;
+
+/***/ }),
+
+/***/ "./src/js/parts/tabs.js":
+/*!******************************!*\
+  !*** ./src/js/parts/tabs.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function tabs() {
+  var tab = document.querySelectorAll('.info-header-tab'),
+      info = document.querySelector('.info-header'),
+      tabContent = document.querySelectorAll('.info-tabcontent');
+
+  function hideTabContent(a) {
+    for (var i = a; i < tabContent.length; i++) {
+      tabContent[i].classList.remove('show');
+      tabContent[i].classList.add('hide');
+    }
+  }
+
+  hideTabContent(1);
+
+  function showTabContent(b) {
+    if (tabContent[b].classList.contains('hide')) {
+      tabContent[b].classList.remove('hide');
+      tabContent[b].classList.add('show');
+    }
+  }
+
+  info.addEventListener('click', function (event) {
+    var target = event.target;
+
+    if (target && target.classList.contains('info-header-tab')) {
+      for (var i = 0; i < tab.length; i++) {
+        if (target == tab[i]) {
+          hideTabContent(0);
+          showTabContent(i);
+          break;
+        }
+      }
+    }
+  });
+}
+
+module.exports = tabs;
+
+/***/ }),
+
+/***/ "./src/js/parts/timer.js":
+/*!*******************************!*\
+  !*** ./src/js/parts/timer.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function timer() {
+  var deadline = '2020-02-21';
+
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date()),
+        seconds = Math.floor(t / 1000 % 60),
+        minutes = Math.floor(t / 1000 / 60 % 60),
+        hours = Math.floor(t / (1000 * 60 * 60));
+    return {
+      'total': t,
+      'hours': hours < 10 ? "0" + hours : hours,
+      'minutes': minutes < 10 ? "0" + minutes : minutes,
+      'seconds': seconds < 10 ? "0" + seconds : seconds
+    };
+  }
+
+  function setClock(id, endtime) {
+    var timer = document.getElementById(id),
+        hours = timer.querySelector('.hours'),
+        minutes = timer.querySelector('.minutes'),
+        seconds = timer.querySelector('.seconds'),
+        timeInterval = setInterval(updateClock, 1000);
+
+    function updateClock() {
+      var t = getTimeRemaining(endtime);
+      hours.textContent = t.hours;
+      minutes.textContent = t.minutes;
+      seconds.textContent = t.seconds;
+
+      if (t.total <= 0) {
+        clearInterval(timeInterval);
+        hours.textContent = "00";
+        minutes.textContent = "00";
+        seconds.textContent = "00";
+      }
+    }
+  }
+
+  setClock('timer', deadline);
+}
+
+module.exports = timer;
+
+/***/ }),
+
+/***/ "./src/js/script.js":
+/*!**************************!*\
+  !*** ./src/js/script.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// require('es6-promise').polyfill();
+__webpack_require__(/*! nodelist-foreach-polyfill */ "./node_modules/nodelist-foreach-polyfill/index.js");
+
+__webpack_require__(/*! formdata-polyfill */ "./node_modules/formdata-polyfill/formdata.min.js");
+
+window.addEventListener("DOMContentLoaded", function () {
+  'use strict';
+
+  var tabs = __webpack_require__(/*! ./parts/tabs.js */ "./src/js/parts/tabs.js");
+
+  var timer = __webpack_require__(/*! ./parts/timer.js */ "./src/js/parts/timer.js");
+
+  var modal = __webpack_require__(/*! ./parts/modal.js */ "./src/js/parts/modal.js");
+
+  var form = __webpack_require__(/*! ./parts/form.js */ "./src/js/parts/form.js");
+
+  var slider = __webpack_require__(/*! ./parts/slider.js */ "./src/js/parts/slider.js");
+
+  var calc = __webpack_require__(/*! ./parts/calc.js */ "./src/js/parts/calc.js");
+
+  tabs();
+  timer();
+  modal();
+  form();
+  slider();
+  calc();
+});
+
+/***/ })
+
+/******/ });
 //# sourceMappingURL=bundle.js.map
